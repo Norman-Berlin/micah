@@ -1,0 +1,346 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    font-family: open sans serif;
+}
+
+body{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: bisque; /* Light gray background for the body */
+
+}
+
+.all{
+    border: #fff 2px solid;
+    background-color: black;
+    color: aliceblue;
+    width: 100%; /* Adjust the width as needed */
+    border-radius: 15px; /* Smooth corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a subtle effect */
+
+}
+
+.header_section{
+    background: url(micah\ canva1.png);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-position: right;
+    min-height: 120vh;
+    position: relative;
+}
+
+.active {
+    background-color: #de0f03;
+    color: white;
+    border-bottom: #de0f03;
+}
+
+.logo{
+    top: 150px;
+    margin-left: 150px;
+    display: none;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4 8%;
+    padding-top: 9px;
+    height: 80px;
+    color: #fff;
+    position: relative;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+ul li a{
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: .6s !important;
+}
+
+ul li a:hover{
+    color: #de0f03;
+}
+.client_info{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+    top: 70px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.client_info h1{
+    top: 40px;
+    color: #fff;
+    font-size: 43px;
+    margin: 10px;
+}
+.client_info h2{
+    color: #fff;
+    font-size: 37px;
+    margin: 10px;
+}
+
+.client_info p{
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 10px;
+}
+
+.icons{
+    display: flex;
+    list-style: none;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.icons li{
+    justify-content: space-between 3px;
+}
+
+.icons li a i{
+    font-size: 40px;
+    transition: .3s;
+}
+
+.icons li a i:hover{
+    color: #de0f03;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    background-color: #de0f03;
+    margin: 15px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 0 rgb(0, 179,134);
+    transition: .6s !important;
+    overflow: hidden !important;
+}
+
+button::after{
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    color: rgb(0, 179,134);
+    height: 100%;
+    width: 100%;
+    transition: .2s;
+}
+
+button:hover::after{
+    top: 100%;
+}
+
+button:hover{
+    box-shadow: #de0f03;
+}
+
+.center-box h3{
+    font-size: 30px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.center-box h2{
+    padding-bottom: 25px;
+}
+
+.center-box p{
+    padding-top: 10px;
+}
+
+.deve h3{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.deve p{
+    margin: 30px;
+}   
+
+.deve ul li{
+    font-weight: 600;
+    display: inline-block;
+    justify-content: space-between;
+    margin-left: 18px;
+
+}
+
+.list{
+    display: flex;
+    margin: 25px;
+}
+
+.kich{
+    padding-left: 25px;
+}
+
+.kich h3{
+    padding-top: 28px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #04AA6D;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    color: blue;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #de0f03;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: black;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: center;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+    
+  .contact-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .contact-us img{
+    max-width: 900px;
+    height: auto;
+    border: 2px solid white;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 3px 3px 6px white;
+  }
+
+  @media (max-width: 768px) {
+    .contact-us {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-us img, .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-us {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-us img, .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+      display: flex;
+      padding-right: 20px;
+      margin-right: 20px;
+    }
+  }
+
+@media (max-width: 768px) {
+            .menu {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .menu li {
+                flex: 1 1 100%; /* Take full width on smaller screens */
+                text-align: center;
+                margin-bottom: 10px; /* Add space between items */
+            }
+        }
+
+@media (max-width: 768px) {
+    .header_section {
+        background-position: center;
+    }
+}
+
+@media (max-width: 768px){
+    .client_info h1{
+        font-size: 40px;
+        padding-bottom: 140px;
+    }
+    .client_info h2{
+        font-size: 40px;
+        display: flex;
+        padding-top: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons a {
+        justify-content: space-between;
+        padding-right: 10px;
+        font-size: 18px; /* Reduced icon size for smaller screens */
+    }
+}
