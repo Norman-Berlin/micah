@@ -116,6 +116,7 @@ ul li a:hover{
 
 .icons li{
     justify-content: space-between 3px;
+    z-index: 1000;
 }
 
 .icons li a i{
