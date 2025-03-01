@@ -28,7 +28,47 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a subtle effect */
 
 }
+.dropbtn{
+    background-color: #de0f03;
+    color: #fff;
+    padding-right: 20px;
+    font-size: 16px;
+    border: 2px solid #fff;
 
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    background: 2px solid;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #fff;
+    z-index: 1;
+    border-radius: 25px;
+
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: bisque;
+    border-radius: 20px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropbtn{
+    background-color: #de0f03;
+}
 .header_section{
     background: url(micah\ canva1.png);
     background-repeat: no-repeat;
@@ -38,10 +78,9 @@ body{
     position: relative;
 }
 
-.active {
+.menu ul li .active {
     background-color: #de0f03;
     color: white;
-    border-bottom: #de0f03;
 }
 
 .logo{
@@ -107,26 +146,124 @@ ul li a:hover{
     margin: 10px;
 }
 
-.icons{
+
+section{
+    padding: 1% 4%;
+}
+
+.hero-container{
+    position: relative;
     display: flex;
-    list-style: none;
-    margin: 20px;
+    align-items: center;
     justify-content: space-between;
+    padding: .5rem 2%;
 }
 
-.icons li{
-    justify-content: space-between 3px;
-    z-index: 1000;
+.hero-image img{
+    height: 300px;
+    width: 300px;
+    min-width: 100px;
+    filter: drop-shadow(0 0 60 var(#de0f03));
 }
 
-.icons li a i{
-    font-size: 40px;
-    transition: .3s;
+.hero-content{
+    max-width: 50%;
+   padding-right: 230px;
 }
 
-.icons li a i:hover{
-    color: #de0f03;
+.hero-content h3{
+    font-size: 1.5rem;
+    font-weight: 500;
 }
+
+.hero-content{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.hero-content h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.hero-content h2 span{
+    color: var(#de0f03);
+}
+
+.hero-content p{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.social-icons{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+.social-icons a {
+    display: inline-flex;
+    font-size: 2rem;
+    background: transparent;
+    color: var(#de0f03);
+    transition: .5s;
+}
+
+.social-icons a:hover{
+    transform: translateY(-10px);
+}
+
+.hero-btn .btn{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 100%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0.2rem 0;
+    color: var(#FFF);
+    background: var(#de0f03);
+    border: 2px solid var(#de0f03);
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn:hover{
+    color: var(#de0f03);
+}
+
+.hero-btn .btn:nth-child(2){
+    background: transparent;
+    color: var(#de0f03);
+}
+
+.hero-btn .btn:nth-child(2)::before {
+    background: var(#de0f03);
+}
+
+.hero-btn .btn:nth-child(2):hover{
+    color: var(#FFF);
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(#FFF);
+    transition: .5s;
+    z-index: -1;
+}
+.btn:hover::before{
+    width: 100%;
+}
+
+
 
 button{
     width: 150px;
@@ -174,10 +311,11 @@ button:hover{
 
 .deve h3{
     text-align: center;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .deve p{
+    padding-top: 8px;
     margin: 30px;
 }   
 
@@ -252,17 +390,7 @@ button:hover{
     display: table;
     clear: both;
   }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
 
-
-    
   .contact-us{
     display: flex;
     align-items: center;
@@ -279,8 +407,18 @@ button:hover{
     border-radius: 25px;
     box-shadow: 3px 3px 6px white;
   }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
 
-  @media (max-width: 768px) {
+
+
+  @media screen and (max-width: 600px) {
     .contact-us {
         flex-direction: column;
         align-items: flex-start;
@@ -290,7 +428,7 @@ button:hover{
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .contact-us {
         flex-direction: column;
         align-items: flex-start;
@@ -300,7 +438,7 @@ button:hover{
     }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 600px) {
     .logo {
       display: flex;
       padding-right: 20px;
@@ -308,7 +446,7 @@ button:hover{
     }
   }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 600px) {
             .menu {
                 flex-wrap: wrap;
                 justify-content: center;
@@ -320,13 +458,13 @@ button:hover{
             }
         }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .header_section {
         background-position: center;
     }
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 600px){
     .client_info h1{
         font-size: 40px;
         padding-bottom: 140px;
@@ -338,10 +476,52 @@ button:hover{
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 600px) {
+    .icons{
+        z-index: 1;
+    }
     .icons a {
         justify-content: space-between;
+        cursor: pointer;
         padding-right: 10px;
         font-size: 18px; /* Reduced icon size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 600px){
+    .deve ul li{
+        font-weight: 600;
+        display: inline-block;
+        justify-content: space-between;
+        margin-left: 100px;
+    
+    }
+}
+
+@media screen and (max-width: 600px){
+    .kich h3{
+        padding-top: 20px;
+        margin: 40px;
+    }
+    .kich p{
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        font-family: open sans serif;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .all{
+        border: #fff 2px solid;
+        background-color: black;
+        color: aliceblue;
+        width: fit-content; /* Adjust the width as needed */
+        border-radius: 15px; /* Smooth corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a subtle effect */
+    
     }
 }
