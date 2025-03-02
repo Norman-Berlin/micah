@@ -408,6 +408,67 @@ button:hover{
     box-shadow: 3px 3px 6px white;
   }
   
+
+  
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0073e6; /* Change to your preferred hover color */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-icons a {
+        font-size: 20px;
+        margin: 0 8px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons a {
+        font-size: 18px;
+        margin: 0 6px;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+}
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column, input[type=submit] {
@@ -470,7 +531,7 @@ button:hover{
         padding-bottom: 140px;
     }
     .client_info h2{
-        font-size: 40px;
+        font-size: 33px;
         display: flex;
         padding-top: 420px;
     }
@@ -523,5 +584,12 @@ button:hover{
         border-radius: 15px; /* Smooth corners */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a subtle effect */
     
+    }
+}
+
+@media screen and (max-width: 600px){
+    .hero-container .dropdown{
+        padding-top: 40px;
+
     }
 }
