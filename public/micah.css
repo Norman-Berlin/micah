@@ -19,6 +19,46 @@ body{
 
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    border-bottom: 1px solid #fff;
+    box-shadow: 2px 2px  #fff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.header a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header a:hover {
+    background-color: #575757;
+}
+
+.section {
+    padding: 40px 10px;
+}
+
+#home {
+    margin-top: 10px; /* Add some space to avoid content being hidden behind the fixed header */
+}
+
+#about {
+    margin-top: 30px; /* Add some space to avoid content being hidden behind the fixed header */
+}
+
+#contact {
+    margin-top: 30px; /* Add some space to avoid content being hidden behind the fixed header */
+}
+
 .all{
     border: #fff 2px solid;
     background-color: black;
@@ -40,6 +80,7 @@ body{
     position: relative;
     display: inline-block;
     background: 2px solid;
+    padding: 28px;
 }
 
 .dropdown-content{
@@ -53,12 +94,15 @@ body{
 
 }
 
+
 .dropdown-content a{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
+
+
 .dropdown-content a:hover{
     background-color: bisque;
     border-radius: 20px;
@@ -66,9 +110,12 @@ body{
 .dropdown:hover .dropdown-content{
     display: block;
 }
+
+
 .dropdown:hover .dropbtn{
     background-color: #de0f03;
 }
+
 .header_section{
     background: url(micah\ canva1.png);
     background-repeat: no-repeat;
@@ -579,11 +626,10 @@ button:hover{
     .all{
         border: #fff 2px solid;
         background-color: black;
-        color: aliceblue;
         width: fit-content; /* Adjust the width as needed */
         border-radius: 15px; /* Smooth corners */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for a subtle effect */
-    
+        font-family: open sans serif;
     }
 }
 
