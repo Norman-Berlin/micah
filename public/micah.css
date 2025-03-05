@@ -151,15 +151,26 @@ ul li a:hover{
     padding-right: 20px;
     font-size: 16px;
     border: 2px solid #fff;
-
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px #fff;
 }
 .dropdown{
     position: relative;
     display: inline-block;
     background: 2px solid;
     padding: 28px;
-}
+    
 
+}
+.section h1{
+    text-align: center;
+}
+.sectionn h1{
+    text-align: center;
+}
+.sectionn p{
+    padding: 40px;
+}
 .dropdown-content{
     display: none;
     position: absolute;
@@ -189,7 +200,6 @@ ul li a:hover{
 .dropdown:hover .dropbtn{
     background-color: #de0f03;
 }
-
 
 .recommendation-box {
     width: 90%;
