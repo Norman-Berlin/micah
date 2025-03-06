@@ -66,7 +66,6 @@ body{
     font-family: open sans-serif;
     justify-content: center;
     background-color: black;
-    scroll-behavior: smooth;
 }
 
 .header_section{
@@ -136,14 +135,13 @@ ul li a:hover{
 .client_info h2{
     color: #fff;
     font-size: 37px;
-    margin: 10px;
+    margin-top: 50px;
 }
 
 .client_info p{
     color: #fff;
     font-size: 25px;
     line-height: 30px;
-    margin: 10px;
 }
 .dropbtn{
     background-color: #de0f03;
@@ -659,18 +657,19 @@ button:hover{
 @media screen and (max-width: 600px) {
     .header_section {
         background-position: center;
+        bottom: 70px;
     }
 }
 
 @media screen and (max-width: 600px){
     .client_info h1{
         font-size: 40px;
-        padding-bottom: 140px;
+        padding-bottom: 400px;
+       
     }
     .client_info h2{
         font-size: 33px;
-        display: flex;
-        padding-top: 420px;
+        padding-top: 300px;
     }
 }
 
@@ -680,7 +679,6 @@ button:hover{
     }
     .icons a {
         justify-content: space-between;
-        cursor: pointer;
         padding-right: 10px;
         font-size: 18px; /* Reduced icon size for smaller screens */
     }
